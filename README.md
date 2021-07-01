@@ -3,9 +3,9 @@ Este proyecto es una elegante página de inicio de sesión hecha con HTML, CSS y
 
 Es 100% responsive, aplicando un estilo simple pero elegante
 
-## Demo
+## Demo 💻
 Puedes mirar el demo [Aquí](https://portfolio-ev.cu.ma/Login-Page-HTML-CSS-JavaScript/)
 
-## Preview
+## Preview ⚙️
 ![](/img/preview1.png)
 ![](/img/preview2.png)
