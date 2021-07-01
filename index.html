@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | EV </title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/validation.js"></script>
+
+    <!-- Favicon -->
+    <link href="img/EV_favicon.ico" rel="icon"/>  
+</head>
+<body>
+    <section class="ev__user--section-container">
+        <div id="js-login-popup" class="ev__user--box-signin-container">
+            <div class="ev__user--img-container">
+                <img src="img/blue_login.jpg" alt="Login User"/>
+            </div>
+            <div class="ev__user--box-form-container">
+                <form name="form1" action="login.html" 
+                    method="GET" onsubmit="return validarFormLogin(this);">
+                    <h1>Binvenido</h1>
+                    <div class="ev__user--items-container">
+                        <label for="email_sigin">Correo:</label>
+                        <input type="text"
+                            name="email"
+                            placeholder="Correo Electronico"
+                            onfocus="this.select();"
+                            required>
+
+                        <label for="password">Contraseña:</label>
+                        <input type="password" 
+                            name="password"
+                            placeholder="Contraseña"
+                            onfocus="this.select();"
+                            required>
+                    </div>
+                    <div class="ev__user--button-container">
+                        <input class="ev__user--button-success" type="submit" value="Ingresar">
+                        <input class="ev__user--button-info" type="submit" value="Limpiar">
+                    </div>
+                    <div class="ev__user--options-container">
+                        <div>
+                            <p>¿Olvidaste tu contraseña? 
+                                <a href="#">
+                                    Recuperar Contraseña
+                                </a>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                No tienes una cuenta? 
+                                <a id="js-register-toggle" href="#">
+                                    Registrate
+                                </a>
+                            </p>
+
+                        </div>
+                    </div>                    
+                </form>
+            </div>
+            <div class="ev__user--img-mobile-container">
+                <img src="img/blue_login.jpg" alt="Login User"/>
+            </div>
+        </div>
+        <div id="js-register-popup" class="ev__user--box-signup-container">
+            <div class="ev__user--img-signup-container">
+                <img src="img/grey_register.jpg" alt="Register User"/>
+            </div>
+            <div class="ev__user-signup--box-form-container">
+                <form name="form2" action="/index.html" 
+                    method="GET" onsubmit="return validarFormRegister(this);">
+                    <h1>Registrate</h1>
+                    <div class="ev__user-signup--items-container">
+                        <label for="email">
+                            Nombre: <span class="itemR" onclick="infoNombre()">(*)</span>
+                        </label>
+                        <input 
+                            type="text"
+                            name="usuario" 
+                            placeholder="Nombre de Usuario"
+                            onfocus="this.select();">
+
+                        <label for="email_sigup">
+                            Correo: <span class="itemR" onclick="infoEmail()">(*)</span>
+                        </label>
+                        <input 
+                            type="text"
+                            name="email"
+                            placeholder="Correo Electronico"
+                            onfocus="this.select();">
+
+                        <label for="password1">
+                            Contraseña: <span class="itemR" onclick="infoPassword()">(*)</span>
+                        </label>
+                        <input 
+                            type="password"
+                            name="password" 
+                            placeholder="Contraseña"
+                            onfocus="this.select();">
+                        <input 
+                            type="password"
+                            name="password2"
+                            placeholder="Confirmar Contraseña"
+                            onfocus="this.select();">
+                    </div>
+                    <div class="ev__user--button-container">
+                        <input class="ev__user--button-success" type="submit" value="Registrarse">
+                        <input class="ev__user--button-info" type="reset" value="Limpiar">
+                    </div>
+                    <div class="ev__user--options-container">
+                        <div>
+                            <p>
+                                Ya tienes una cuenta? 
+                                <a id="js-login-toggle" href="#">
+                                    Ingresar
+                                </a>
+                            </p>
+                        </div>
+                    </div>                    
+                </form>
+            </div>
+            <div class="ev__user--img-signup-mobile-container">
+                <img src="img/grey_register.jpg" alt="Register User"/>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<!-- JS -->
+<script type="text/javascript" src="js/theme.js"></script>

@@ -1,0 +1,633 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ev__user--section-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(102.68% 27.27% at 152.68% 72.73%, rgba(196, 196, 196, 0.7) 0%, rgba(0, 0, 0, 0) 100%),
+    radial-gradient(108.26% 108.26% at -15.77% -8.26%, #C4C4C4 0%, rgba(255, 255, 255, 0) 100%);
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.ev__user--box-signin-container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #ffffff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+
+    border-radius: 20px;
+
+}
+
+.ev__user--img-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+
+    border-radius: 20px 0px 0px 20px;
+}
+
+.ev__user--img-signup-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+
+    border-radius: 20px 0px 0px 20px;
+}
+
+.ev__user--img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.ev__user--img-signup-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.ev__user--box-form-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 30px;
+    transition: 0.5s;
+}
+
+.ev__user--box-form-container form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 20px;
+}
+
+.ev__user--box-form-container form h1 {
+    font-weight: bold;
+
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+
+    color: #000000;
+}
+
+.ev__user--items-container {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 10px;   
+}
+
+.ev__user--items-container input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.ev__user--button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    margin: 0;
+    padding: 0px 0px 10px 0px;
+}
+
+.ev__user--button-success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    width: 257px;
+    height: 39px;
+
+    background: #28A745;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 90px;
+
+    outline: none;
+    text-decoration: none;
+
+    transition: .3s ease all;
+}
+
+.ev__user--button-container input {
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.ev__user--button-success:hover {
+    background: #218838;
+}
+
+.ev__user--button-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px;
+
+    width: 257px;
+    height: 39px;
+
+    background: #17A2B8;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 90px;
+
+    outline: none;
+    text-decoration: none;
+
+    transition: .3s ease all;
+}
+
+.ev__user--button-info:hover {
+    background: #138496;
+}
+
+.ev__user--options-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ev__user--options-container p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555;
+    font-weight: 300;
+}
+
+.ev__user--options-container a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #577eff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.ev__user--box-signup-container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #ffffff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+
+    border-radius: 20px;
+}
+
+.ev__user-signup--box-form-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 30px;
+    transition: 0.5s;
+}
+
+.ev__user-signup--box-form-container form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between !important;
+    gap: 0px;
+}
+
+.ev__user-signup--box-form-container form h1 {
+    font-weight: bold;
+
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+
+    color: #000000;
+
+    margin-bottom: 10px;
+}
+
+.ev__user-signup--items-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 0px;
+}
+
+.ev__user-signup--items-container label {
+    padding-bottom: 10px;
+}
+
+.ev__user--img-mobile-container {
+    display: none;
+    visibility: hidden;
+}
+
+.ev__user--img-signup-mobile-container {
+    display: none;
+    visibility: hidden;
+}
+
+/*---------------- Mobile Responsive ---------------*/
+@media screen and (max-width: 768px) {
+    .ev__user--box-signin-container {
+        position: relative;
+        width: 600px;
+        height: 500px;
+        box-sizing: border-box;
+    }
+
+    .ev__user--box-signup-container {
+        width: 600px;
+        height: 500px;
+    }
+
+    .ev__user--button-success {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /*------------- Login ---------------*/
+    .ev__user--box-signin-container {
+        width: 300px;
+        height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+
+        border-radius: 20px;
+    }
+
+    .ev__user--img-container {
+        width: 100%;
+        height: 10%;
+
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .ev__user--img-container img {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .ev__user--img-mobile-container {
+        display: flex;
+        visibility: visible;
+
+        position: relative;
+        width: 100%;
+        height: 5%;
+        transition: 0.5s;
+
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .ev__user--img-mobile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .ev__user--box-form-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        box-sizing: border-box;
+        padding: 0px 30px 0px 30px;
+        transition: 0.5s;
+    }
+
+    .ev__user--box-form-container form h1 {
+        margin-top: 10px;
+    }
+
+    .ev__user--options-container {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    /*------------- Register ---------------*/
+    .ev__user--box-signup-container {
+        position: relative;
+        width: 300px;
+        height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .ev__user--img-signup-container {
+        width: 100%;
+        height: 10%;
+
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .ev__user--img-signup-container img {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .ev__user--img-signup-mobile-container {
+        display: flex;
+        visibility: visible;
+
+        position: relative;
+        width: 100%;
+        height: 5%;
+        transition: 0.5s;
+
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .ev__user--img-signup-mobile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .ev__user-signup--box-form-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        box-sizing: border-box;
+        padding: 0px 30px 0px 30px;
+        transition: 0.5s;
+    }
+
+    .ev__user-signup--box-form-container form h1 {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .ev__user--box-form-container {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .ev__user-signup--box-form-container {
+        padding: 0px 10px 0px 10px;
+    }
+
+    /*------------- Login ---------------*/
+    .ev__user--box-signin-container {
+        width: 250px;
+        height: 500px;
+    }
+
+    /*------------- Register ---------------*/
+    .ev__user--box-signup-container {
+        width: 250px;
+        height: 500px;
+    }
+}
+
+/*--------- Nexus 10 -----*/
+@media screen and (width: 800px) {
+    @media screen and (height: 1280px) { 
+        .ev__user--section-container {
+            min-height: 60vh;
+        }
+    }
+}
+
+/*--------- iPad -----*/
+@media screen and (width: 768px) {
+    @media screen and (height: 1024px) {
+        .ev__user--section-container {
+            min-height: 80vh;
+        }
+    }
+}
+
+/*--------- iPad Pro -----*/
+@media screen and (width: 1024px) {
+    @media screen and (height: 1366px) {
+        .ev__user--section-container {
+            min-height: 60vh;
+        }
+    }
+}
+/*-------------- END Mobile Responsive -------------*/
+
+.ev__user-signup--items-container input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.ev__user--box-signin-container {
+    display: flex;
+    visibility: visible;
+    -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.ev__user--box-signin-container.active {
+    display: none;
+    visibility: hidden;    
+}
+
+.ev__user--box-signup-container {
+    display: none;
+    visibility: hidden;
+}
+
+.ev__user--box-signup-container.active {
+    display: flex;
+    visibility: visible;
+    -webkit-animation: flip-in-hor-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: flip-in-hor-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-6-28 14:23:55
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation flip-in-hor-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes flip-in-hor-bottom {
+    0% {
+        -webkit-transform: rotateX(80deg);
+        transform: rotateX(80deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flip-in-hor-bottom {
+    0% {
+        -webkit-transform: rotateX(80deg);
+        transform: rotateX(80deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1;
+    }
+}
+
+.itemR {
+    color: red;
+    cursor: help;
+}
+
+
+/*---------------- login.html ---------------------*/
+.ev__profile--section-container {
+    position: relative;
+
+    overflow: hidden;
+    
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(102.68% 27.27% at 152.68% 72.73%, rgba(196, 196, 196, 0.7) 0%, rgba(0, 0, 0, 0) 100%),
+        radial-gradient(108.26% 108.26% at -15.77% -8.26%, #C4C4C4 0%, rgba(255, 255, 255, 0) 100%);
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.ev__profile--box-text-container {
+    z-index: 1000;
+}
+
+.ev__profile--box-text-container h2 {
+    /* color: #ffffff; */
+    text-align: center;
+    font-size: 12vw;
+    line-height: 1em;
+    font-weight: 900;
+    z-index: 2;
+    text-shadow: -10px 10px 25px white;
+    
+}
+
+.ev__profile--box-text-container h2 span {
+    font-size: 0.2em;
+    line-height: 0.4em;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: none;
+}
+
+.ev__profile--block-items {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background: #C4C4C4;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+/*-------------- END login.html -------------------*/
